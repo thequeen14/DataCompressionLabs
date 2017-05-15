@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="Encoders.cs" />
     <Compile Include="Decoders.cs" />
+    <Compile Include="Huffman\HuffmanEncoder.cs" />
+    <Compile Include="Huffman\HuffmanTree.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
