@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FanoShennon\BinaryTree.cs" />
     <Compile Include="ToolsForEncoding.cs" />
     <Compile Include="ToolsForDecoding.cs" />
     <Compile Include="FanoShennon\FanoShennonEncoder.cs" />
