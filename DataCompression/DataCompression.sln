@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataCompression", "DataCompression\DataCompression.csproj", "{CDBC0781-C152-4576-AF4A-52488EB886CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{B8C7E1A7-1008-4566-ABBF-13CCC4A91F5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CDBC0781-C152-4576-AF4A-52488EB886CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDBC0781-C152-4576-AF4A-52488EB886CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDBC0781-C152-4576-AF4A-52488EB886CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8C7E1A7-1008-4566-ABBF-13CCC4A91F5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8C7E1A7-1008-4566-ABBF-13CCC4A91F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8C7E1A7-1008-4566-ABBF-13CCC4A91F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8C7E1A7-1008-4566-ABBF-13CCC4A91F5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,8 +3,6 @@ using System.Collections.Generic;
 
 namespace DataCompression.Huffman
 {
-
-
     internal class HuffmanTree : IComparable
     {
         public HuffmanTree LeftChild { get; set; }
@@ -27,28 +25,43 @@ namespace DataCompression.Huffman
             RightChild = right;
         }
 
-        public void SetChildCodes()
+        public int SetChildCodes()
         {
+            int maxLength = 0;
+
             if (LeftChild != null)
             {
                 LeftChild.Code = Code + "0";
-                LeftChild.SetChildCodes();
+                maxLength = LeftChild.SetChildCodes() + 1;
             }
 
             if (RightChild != null)
             {
                 RightChild.Code = Code + "1";
-                RightChild.SetChildCodes();
+                var tempLength = RightChild.SetChildCodes() + 1;
+                if (tempLength > maxLength)
+                    maxLength = tempLength;
             }
+
+            return maxLength;
+        }
+
+        public void FormatChildCodes(int max)
+        {
+            if (LeftChild != null && LeftChild.Code.Length < max)
+                    LeftChild.Code = new string('0', max - LeftChild.Code.Length) + LeftChild.Code;
+
+            if (RightChild != null && RightChild.Code.Length < max)
+                RightChild.Code = new string('0', max - RightChild.Code.Length) + RightChild.Code;
         }
 
         public Dictionary<string, string> GetChilds(Dictionary<string, string> list)
         {
             if (LeftChild != null)
-                LeftChild.GetChilds(list);
+                list = LeftChild.GetChilds(list);
 
             if (RightChild != null)
-                RightChild.GetChilds(list);
+                list = RightChild.GetChilds(list);
 
             if (LeftChild == null && RightChild == null)
                 list.Add(Chars, Code);

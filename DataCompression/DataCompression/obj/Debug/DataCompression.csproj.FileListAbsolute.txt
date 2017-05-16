@@ -1,5 +1,0 @@
-C:\DataCompressionLabs\DataCompressionLabs\DataCompression\DataCompression\bin\Debug\DataCompression.dll
-C:\DataCompressionLabs\DataCompressionLabs\DataCompression\DataCompression\bin\Debug\DataCompression.pdb
-C:\DataCompressionLabs\DataCompressionLabs\DataCompression\DataCompression\obj\Debug\DataCompression.csprojResolveAssemblyReference.cache
-C:\DataCompressionLabs\DataCompressionLabs\DataCompression\DataCompression\obj\Debug\DataCompression.dll
-C:\DataCompressionLabs\DataCompressionLabs\DataCompression\DataCompression\obj\Debug\DataCompression.pdb
