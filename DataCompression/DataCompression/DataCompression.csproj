@@ -40,11 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Encoders.cs" />
-    <Compile Include="Decoders.cs" />
+    <Compile Include="ToolsForEncoding.cs" />
+    <Compile Include="ToolsForDecoding.cs" />
+    <Compile Include="FanoShennon\FanoShennonEncoder.cs" />
     <Compile Include="Huffman\HuffmanEncoder.cs" />
     <Compile Include="Huffman\HuffmanTree.cs" />
+    <Compile Include="LZ78\LZ78Encoder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RLE\RLEEncoder.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
