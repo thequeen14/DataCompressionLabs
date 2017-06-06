@@ -19,10 +19,10 @@ namespace DataCompression.LZ78
             int numberLength = 0;
             int newNumber = 0;
 
-            while (symbolPosition <= message.Length - 1 && numberPosition <= message.Length - 1)
+            while (symbolPosition <= message.Length - 1 && numberPosition <= message.Length - 2)
             {
                 numberLength = 0;
-                while (numberPosition + numberLength <= message.Length - 1 && char.IsDigit(message[numberPosition + numberLength]))
+                while (numberPosition + numberLength <= message.Length - 2 && char.IsDigit(message[numberPosition + numberLength]))
                 {
                     numberLength++;
                 }
