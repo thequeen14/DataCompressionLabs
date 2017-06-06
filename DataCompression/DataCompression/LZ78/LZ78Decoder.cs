@@ -19,9 +19,10 @@ namespace DataCompression.LZ78
             int numberLength = 0;
             int newNumber = 0;
 
-            while (symbolPosition <= message.Length - 1)
+            while (symbolPosition <= message.Length - 1 && numberPosition <= message.Length - 1)
             {
-                while (char.IsDigit(message[numberPosition + numberLength]))
+                numberLength = 0;
+                while (numberPosition + numberLength <= message.Length - 1 && char.IsDigit(message[numberPosition + numberLength]))
                 {
                     numberLength++;
                 }
@@ -37,7 +38,9 @@ namespace DataCompression.LZ78
                 else
                 {
                     dictionary.Add(dictionary.Count + 1, dictionary[newNumber] + message[symbolPosition]);
+                    decodedMessage += dictionary[newNumber] + message[symbolPosition];
                 }
+                numberPosition = symbolPosition + 1;
             }
 
             MessageFileWriter.WriteEncodedMessageToFile("output.txt", decodedMessage);
