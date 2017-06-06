@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -44,6 +44,7 @@ namespace DataCompression.RLE
                     messageAfterRLE += currentCharacter + increment;
                 }
             }
+            messageAfterRLE += " " + messageAfterBW.Value;
             MessageFileWriter.WriteEncodedMessageToFile("output1.txt", messageAfterRLE);
         }
 
