@@ -8,6 +8,7 @@ namespace DataCompression.FanoShennon
 {
     public class FanoShennonEncoder : IEncoder
     {
+        //test comment
         public void Encode(string file)
         {
             var message = MessageExtractor.ExtractMessage(file);
