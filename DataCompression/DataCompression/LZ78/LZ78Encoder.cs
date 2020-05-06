@@ -46,6 +46,7 @@ namespace DataCompression.LZ78
                     dictionary.Add(newEntry, dictionary.Count + 1);
                 }
             }
+            //test comment 2
             MessageFileWriter.WriteEncodedMessageToFile("output.txt", encodedMessage);
         }
     }
