@@ -21,8 +21,8 @@ namespace DataCompression.Huffman
         public HuffmanTree(HuffmanTree left, HuffmanTree right)
         {
             Frequency = 1;
-            LeftChild = left;
-            RightChild = right;
+            LeftChild = right;
+            RightChild = left;
         }
 
         public int SetChildCodes()
